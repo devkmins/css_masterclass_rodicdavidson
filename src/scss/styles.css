@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  height: 200vh;
+}
+body .header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+body .header .header__company {
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+body .header .header__company:hover {
+  color: #294f38;
+}
+body .header .header__company:hover span:last-child {
+  color: #294f38;
+}
+body .header .header__company span:last-child {
+  color: #b7bcb7;
+}
+body .header .header__nav {
+  display: flex;
+  list-style: none;
+  font-weight: 300;
+  font-size: 16px;
+}
+body .header .header__nav li {
+  margin-right: 15px;
+  cursor: pointer;
+}
+body .main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-top: 65px;
+}
+body .main .main__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 60%;
+  gap: 65px 0;
+}
+body .main .main__content .main__content-explain {
+  display: flex;
+  flex-direction: column;
+}
+body .main .main__content .main__content-explain span {
+  font-weight: 600;
+}
+body .main .main__content .main__content-explain p {
+  width: 90%;
+  font-weight: 300;
+  font-size: 15px;
+}
+body .main .main__content .main__content-img--first,
+body .main .main__content .main__content-img--second {
+  margin-right: 15px;
+}
+body .main .main__content .main__content-img--first span,
+body .main .main__content .main__content-img--second span {
+  font-size: 15px;
+  font-weight: 200;
+}
+body .main .main__content .main__content-img--first div,
+body .main .main__content .main__content-img--second div {
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 90%;
+  margin-bottom: 10px;
+}
+body .main .main__content .main__content-img--first div {
+  background-image: url("../../img/house_1.jpeg");
+}
+body .main .main__content .main__content-img--second div {
+  background-image: url("../../img/house_2.jpeg");
+}
+body .footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 200px;
+}
+body .footer .footer__img {
+  margin-right: 15px;
+}
+body .footer .footer__img div {
+  background-image: url("../../img/house_3.jpeg");
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+body .footer .footer__img span {
+  font-size: 15px;
+  font-weight: 200;
+}
+body .footer .footer__explain p {
+  width: 90%;
+  font-weight: 300;
+  font-size: 15px;
+}
+body .footer .footer__explain p > span {
+  color: lightgray;
+}/*# sourceMappingURL=styles.css.map */

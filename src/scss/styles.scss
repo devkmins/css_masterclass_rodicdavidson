@@ -1,0 +1,140 @@
+@import "_variables";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600&display=swap");
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  height: 200vh;
+
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+
+    .header__company {
+      margin-left: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+
+      &:hover {
+        color: #294f38;
+
+        span:last-child {
+          color: #294f38;
+        }
+      }
+
+      span:last-child {
+        color: #b7bcb7;
+      }
+    }
+
+    .header__nav {
+      display: flex;
+      list-style: none;
+      font-weight: 300;
+      font-size: 16px;
+
+      li {
+        margin-right: 15px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-top: 65px;
+
+    .main__content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      height: 60%;
+      gap: 65px 0;
+
+      .main__content-explain {
+        display: flex;
+        flex-direction: column;
+
+        span {
+          font-weight: 600;
+        }
+
+        p {
+          width: 90%;
+          font-weight: 300;
+          font-size: 15px;
+        }
+      }
+
+      .main__content-img--first,
+      .main__content-img--second {
+        margin-right: 15px;
+
+        span {
+          font-size: 15px;
+          font-weight: 200;
+        }
+      }
+
+      .main__content-img--first div,
+      .main__content-img--second div {
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 90%;
+        margin-bottom: 10px;
+      }
+
+      .main__content-img--first div {
+        background-image: url("../../img/house_1.jpeg");
+      }
+
+      .main__content-img--second div {
+        background-image: url("../../img/house_2.jpeg");
+      }
+    }
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 200px;
+
+    .footer__img {
+      margin-right: 15px;
+
+      div {
+        background-image: url("../../img/house_3.jpeg");
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+      }
+
+      span {
+        font-size: 15px;
+        font-weight: 200;
+      }
+    }
+
+    .footer__explain {
+      p {
+        width: 90%;
+        font-weight: 300;
+        font-size: 15px;
+
+        & > span {
+          color: lightgray;
+        }
+      }
+    }
+  }
+}
